@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <base href="/"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+<span class="validationError"
+      th:if="${customers.isEmpty()}">No customers added, yet.</span>
+<a th:href="@{/customers/newCustomer}">Add Customer</a>
 <ul>
-    <li>
+    <li th:each="customer:${customers}">
+        <span th:text="${customer.toString()}"></span>
     </li>
 </ul>
 </body>

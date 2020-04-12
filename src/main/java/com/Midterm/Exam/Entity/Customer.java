@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@Table(name = "cutomers")
+@Table(name = "customers")
 public class Customer {
 
     @Id
@@ -36,4 +36,17 @@ public class Customer {
     @Column(name = "web_page")
     private String webPage;
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", city='" + city + '\'' +
+                ", webPage='" + webPage + '\'' +
+                '}';
+    }
 }

@@ -10,17 +10,17 @@ import javax.validation.constraints.NotBlank;
 @Setter
 public class CustomerCreateDao {
     @NotBlank
-    private String firstName;
+    private String firstname;
     @NotBlank
-    private String lastName;
+    private String lastname;
     @NotBlank
     @Email
-    private String emailAddress;
+    private String emailaddress;
     @NotBlank
-    private String jobTitle;
+    private String jobtitle;
     private String mobilePhone;
     @NotBlank
     private String city;
     @NotBlank
-    private String webPage;
+    private String webpage;
 }

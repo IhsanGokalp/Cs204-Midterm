@@ -14,4 +14,18 @@ public class CustomerReturnDao {
     private String mobilePhone;
     private String city;
     private String webPage;
+
+    @Override
+    public String toString() {
+        return "CustomerReturnDao{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", city='" + city + '\'' +
+                ", webPage='" + webPage + '\'' +
+                '}';
+    }
 }

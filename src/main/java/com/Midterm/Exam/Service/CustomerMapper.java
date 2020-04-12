@@ -22,12 +22,12 @@ public class CustomerMapper {
     public Customer toCustomer(CustomerCreateDao customerCreateDao) {
         Customer customer = new Customer();
         customer.setCity(customerCreateDao.getCity());
-        customer.setEmailAddress(customerCreateDao.getEmailAddress());
-        customer.setFirstName(customerCreateDao.getFirstName());
-        customer.setJobTitle(customerCreateDao.getJobTitle());
-        customer.setLastName(customerCreateDao.getLastName());
+        customer.setEmailAddress(customerCreateDao.getEmailaddress());
+        customer.setFirstName(customerCreateDao.getFirstname());
+        customer.setJobTitle(customerCreateDao.getJobtitle());
+        customer.setLastName(customerCreateDao.getLastname());
         customer.setMobilePhone(customerCreateDao.getMobilePhone());
-        customer.setWebPage(customerCreateDao.getWebPage());
+        customer.setWebPage(customerCreateDao.getWebpage());
         return customer;
     }
 }
