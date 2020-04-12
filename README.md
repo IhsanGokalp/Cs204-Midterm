@@ -1,6 +1,11 @@
 # Cs204-Midterm
-When there is no customer in DB, it gives the empty list end a "true" boolean value to parameter with the name noCutomers.
+Deployed to https://blooming-wave-17575.herokuapp.com/
+-Adding new customer from "/customers/newcustomer" link
+-All customers can be viewed from "/customers"
+-username="user", password="password" 
 
-I could not try adding new customer through postman. So I made a formLogin you can give "user" for username and "password" to
-password to authanticate through web browser.
-To try it in postman, line 23, 24 and 25 needed to be removed from WebSecurityConfig.java.
+#Extra features:
+1-Validation based on the class CustomerCreateDao.java
+2-Bootstrap added. (Activates when logged in)
+3-Additional html pages.
+4-Usage of OOP, tried to use different classes for different duties.
